@@ -1,15 +1,13 @@
-# Synthèse de dette publique Eurostat
+# Récupération de la dette publique Eurostat
 
-Application PyQt6 qui récupère les ratios de dette publique (% du PIB) d'Eurostat
-et génère un tableau + un mail de synthèse (France, Zone euro, Union européenne,
-État le plus/moins endetté).
+Application PyQt6 qui automatise la récupération des ratios de dette publique (% du PIB)
+(Eurostat, [sdg_17_40](https://ec.europa.eu/eurostat/databrowser/view/sdg_17_40/default/table?lang=en&category=t_gov.t_gov_gfs10.t_gov_dd))
+puis la génération du mail de synthèse envoyé au cabinet : France, zone euro, Union
+européenne, État le plus/le moins endetté, avec leurs évolutions.
 
-## Installation
+## Démarrage rapide
 
-pip install -r requirements.txt
+1. `pip install -r requirements.txt`
+2. Double-cliquer sur `lancer_generer_synthese.bat` (ou `python generer_synthese.py` depuis un terminal)
 
-## Lancement
-
-python interface.py
-
-*(La création de mail utilise Outlook via COM — nécessite Windows + Outlook installé.)*
+*(L'utilisation de l'interface nécessite Python et la création de mail Windows + Outlook)*
