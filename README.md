@@ -10,4 +10,4 @@ européenne, État le plus/le moins endetté, avec leurs évolutions.
 1. `pip install -r requirements.txt`
 2. `python interface.py` depuis un terminal pour lancer l'application
 
-*(L'utilisation de l'interface nécessite Python tandis que la création de mail nécessite Windows + Outlook)*
+*(L'utilisation de l'interface et la création de mail nécessitent respectivement l'installation de Python et de Windows + Outlook)*
