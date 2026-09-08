@@ -63,7 +63,7 @@ infos_bdd = eurostat.get_toc_df()
 dates = (
     infos_bdd
     .loc[
-        lambda df: df['code'] == code_bdd.upper(),
+        lambda df: df["code"].str.upper() == code_bdd.upper(),
         ['last update of data', 'data start', 'data end']
     ]
     .squeeze()
